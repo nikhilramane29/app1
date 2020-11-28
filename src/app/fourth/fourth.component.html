@@ -1,0 +1,25 @@
+<h2>Fourth Component...</h2>
+
+<button (click)="handleClick()">Click Here</button>
+
+<hr>
+<div
+    [class.red-box]="boxType == 1"
+    [class.green-box]="boxType == 2"
+    [class.yellow-box]="boxType == 3"
+    [class.brown-box]="boxType == 4"
+    [class.blue-box]="boxType == 5"
+
+    class="box"></div>
+
+<!-- <button (click)="changeColorRed()">red</button>
+<button (click)="changeColorGreen()">green</button>
+<button (click)="changeColorYellow()">yellow</button>
+<button (click)="changeColorBrown()">brown</button>
+<button (click)="changeColorBlue()">blue</button> -->
+
+<button (click)="changeColor(1)">red</button>
+<button (click)="changeColor(2)">green</button>
+<button (click)="changeColor(3)">yellow</button>
+<button (click)="changeColor(4)">brown</button>
+<button (click)="changeColor(5)">blue</button>
